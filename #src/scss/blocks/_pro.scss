@@ -62,7 +62,7 @@
   &__right,  
   &__left {
     width: 37px; height: 10px;    
-    background: url('../../img/css_sprites.png') -98px -138px;
+    background: url('../img/sprites.png') -98px -138px;
     cursor: pointer;
     transition: 0.2s ease-out;
 
@@ -279,7 +279,7 @@
       margin: 0 20px;
       .bg-basket_orange {
         width: 24px; height: 22px;
-        background: url('../../img/css_sprites.png') -54px -138px;
+        background: url('../img/sprites.png') -54px -138px;
       }
     }
   }  
