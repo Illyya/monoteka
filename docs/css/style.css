@@ -521,9 +521,19 @@ body.active {
   display: flex;
 }
 
+.headers__title-3 {
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
 .headers__title-3:not(:last-of-type) {
   margin-right: 55px;
-  cursor: pointer;
+}
+
+.headers__title-3:hover {
+  color: #ef7f1a;
 }
 
 .arrows {
