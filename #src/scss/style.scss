@@ -1,0 +1,61 @@
+@import 'reset';
+@import 'fonts';
+@import 'container';
+@import 'variables';
+
+body {
+  font-family: $font-family-1;
+  line-height: 1;
+
+  &.active {
+    overflow: hidden;
+  }
+}
+
+.title-3 {
+  font-size: 2.25rem;
+}
+
+.btn { 
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: $color-1;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    background-color: darken($color: $color-1, $amount: 10);
+  }
+
+  &__katalog {
+    position: relative;
+    padding: 13px 75px 13px 25px;
+    margin-right: 90px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 10px; 
+      height: 17px;
+      top: 50%;
+      right: 17px;
+      transform: translateY(-50%);      
+      background: url('../../img/sprites/css_sprites.png') -193px -49px;
+    }
+  }
+}
+
+@import 'blocks/header';
+@import 'blocks/picture';
+@import 'blocks/clothing-menu';
+@import 'blocks/pro';
+
+.swiper-container {
+  flex: 1;
+
+  @media (max-width: 1360px) {
+    flex: 1 1 100%;
+  }
+}
